@@ -4,35 +4,361 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Milqka AI Clips</title>
+  <meta name="description" content="Milqka AI Clips - a private video editing and publishing application for gaming content.">
+  <meta name="theme-color" content="#100d18">
+
+  <title>Milqka AI Clips | Video Creation & Publishing</title>
+
   <style>
+    :root {
+      --bg: #100d18;
+      --surface: #1b1528;
+      --border: #3d3054;
+      --text: #f6f0ff;
+      --muted: #b9accb;
+      --accent: #d59aff;
+      --accent2: #ff8bd1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background: #111018;
-      color: #f5f0ff;
-      font-family: Arial, sans-serif;
-      max-width: 780px;
-      margin: 80px auto;
-      padding: 24px;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% 0%,
+          #34204e 0%, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
     }
-    h1 { color: #d69aff; }
-    a { color: #d69aff; }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: .3px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav a {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 0 65px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: rgba(213,154,255,.08);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 1.15;
+      margin: 25px 0;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      background: linear-gradient(
+        90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: 17px;
+      color: var(--muted);
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin: 0 0 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(27,21,40,.9);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+    }
+
+    .card-icon {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 17px;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    section {
+      margin-bottom: 75px;
+    }
+
+    .workflow {
+      background: rgba(27,21,40,.7);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .workflow p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .contact {
+      text-align: center;
+      background: linear-gradient(
+        135deg, #241936, #1b1528);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 25px;
+    }
+
+    .contact p {
+      color: var(--muted);
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 680px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 65px 0 45px;
+      }
+
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Milqka AI Clips</h1>
-  <p>Milqka AI Clips is a desktop-based AI-assisted
-  video editing and publishing tool for gaming creators.</p>
+  <div class="container">
 
-  <p>The application transforms gaming stream recordings
-  into short vertical videos and allows creators to review,
-  approve and publish content to their social accounts.</p>
+    <header>
+      <a href="index.html" class="brand">
+        Milqka <span>AI Clips</span>
+      </a>
 
-  <p>Videos are published only after explicit
-  creator approval.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
 
-  <h2>Legal</h2>
-  <p><a href="privacy.html">Privacy Policy</a></p>
-  <p><a href="terms.html">Terms of Service</a></p>
+    <main>
+
+      <section class="hero">
+        <div class="eyebrow">
+          Private Creator Application
+        </div>
+
+        <h1>
+          Create. Review.<br>
+          <span>Publish.</span>
+        </h1>
+
+        <p class="subtitle">
+          Milqka AI Clips is a private desktop
+          application for preparing gaming highlights
+          and publishing approved short-form videos
+          to authorized social media accounts.
+        </p>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">
+          About Milqka AI Clips
+        </h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <div class="card-icon">🎬</div>
+            <h3>Video Creation</h3>
+            <p>
+              Prepare short-form gaming videos
+              from recorded gameplay and streams.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">✓</div>
+            <h3>Creator Approval</h3>
+            <p>
+              Review finished videos and approve
+              content before publication.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">↗</div>
+            <h3>Authorized Publishing</h3>
+            <p>
+              Publish approved videos through
+              supported official platform APIs.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">
+          How It Works
+        </h2>
+
+        <div class="workflow">
+          <h3>Creator-controlled publishing</h3>
+
+          <p>
+            The application assists its operator
+            with preparing short-form video content.
+            Finished videos are reviewed before
+            publication.
+          </p>
+
+          <p>
+            Supported social media accounts are
+            connected using official authorization
+            methods, subject to platform permissions.
+          </p>
+
+          <p>
+            Publishing is designed to require
+            explicit approval by the account owner.
+            The application is intended for the
+            operator's own accounts and is not
+            offered as a public service.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact">
+          <h2>Contact</h2>
+
+          <p>
+            For questions about Milqka AI Clips,
+            account authorization, privacy,
+            or data deletion requests:
+          </p>
+
+          <a class="email"
+             href="mailto:mil8d1ka@gmail.com">
+            mil8d1ka@gmail.com
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>© 2026 Milqka AI Clips</span>
+
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:mil8d1ka@gmail.com">Contact</a>
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>
