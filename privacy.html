@@ -4,211 +4,568 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Milqka AI Clips">
+  <meta name="description" content="Privacy Policy for Milqka AI Clips, including YouTube API Services, Google OAuth, data use, storage, retention and deletion.">
+  <meta name="theme-color" content="#100d18">
   <title>Privacy Policy | Milqka AI Clips</title>
+
   <style>
     * { box-sizing: border-box; }
+
     body {
-      background: #111018;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% 0%,
+          #34204e 0%, transparent 55%),
+        #100d18;
       color: #f5f0ff;
-      font-family: Arial, sans-serif;
-      max-width: 820px;
-      margin: 60px auto;
-      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
-    h1, h2, a { color: #d69aff; }
-    h1 { font-size: 34px; }
-    h2 { margin-top: 32px; font-size: 21px; }
-    a { text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .date { color: #b5aec4; }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 35px 24px 65px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #40384e;
+      padding-bottom: 20px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f5f0ff;
+    }
+
+    .brand span, h1, h2 {
+      color: #d69aff;
+    }
+
+    a {
+      color: #d69aff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 44px);
+      line-height: 1.2;
+      margin-top: 50px;
+    }
+
+    h2 {
+      margin-top: 38px;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-top: 25px;
+    }
+
+    p, li {
+      color: #d3c9e1;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .date {
+      color: #b5aec4;
+      font-size: 14px;
+    }
+
+    .intro {
+      padding: 24px;
+      border: 1px solid #40384e;
+      border-radius: 16px;
+      background: rgba(27,21,40,.8);
+      margin-top: 28px;
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
     footer {
-      margin-top: 48px;
-      padding-top: 20px;
+      margin-top: 55px;
+      padding-top: 22px;
       border-top: 1px solid #40384e;
+      color: #b5aec4;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px 45px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="date">Last updated: November 12, 2026</p>
+<div class="container">
 
-  <h2>1. Introduction</h2>
-  <p>
-    Milqka AI Clips is a private, desktop-based application
-    designed to process gaming stream recordings, create
-    short-form videos, and assist the application operator
-    in publishing content to their own social media accounts.
-  </p>
-  <p>
-    The application is intended for personal use by its
-    operator and is not offered as a public service
-    for third-party users.
-  </p>
-
-  <h2>2. Information We Process</h2>
-  <p>
-    When a social media account is connected through an
-    authorized integration, Milqka AI Clips may process:
-  </p>
-  <ul>
-    <li>Social media account identifiers and basic profile information.</li>
-    <li>OAuth access tokens and refresh tokens.</li>
-    <li>Video files, thumbnails, captions, and publishing preferences.</li>
-    <li>Upload status, timestamps, and API error information.</li>
-    <li>Local video editing metadata and approval records.</li>
-  </ul>
-  <p>
-    The application does not require social media account
-    passwords. Authentication is performed through the
-    relevant platform's official authorization process.
-  </p>
-
-  <h2>3. How Information Is Used</h2>
-  <p>
-    Information is processed only as necessary to:
-  </p>
-  <ul>
-    <li>Connect and authenticate the operator's accounts.</li>
-    <li>Prepare and review gaming highlight videos.</li>
-    <li>Upload videos approved by the operator.</li>
-    <li>Apply captions and available publishing settings.</li>
-    <li>Monitor publication status and diagnose technical errors.</li>
-    <li>Maintain the security and reliability of the integration.</li>
-  </ul>
-  <p>
-    Milqka AI Clips is designed to require explicit
-    operator approval before initiating publication.
-  </p>
-
-  <h2>4. TikTok Integration</h2>
-  <p>
-    TikTok account access is requested through TikTok's
-    official OAuth authorization process.
-  </p>
-  <p>
-    Subject to the permissions granted and the
-    availability of TikTok's APIs, the application
-    may use authorized account information and
-    publishing permissions to upload approved videos.
-  </p>
-  <p>
-    TikTok may independently process information
-    according to its own privacy policy:
-    <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en"
-       target="_blank" rel="noopener noreferrer">
-      TikTok Privacy Policy
-    </a>.
-  </p>
-
-  <h2>5. Storage and Security</h2>
-  <p>
-    Gaming recordings, generated videos, and editing
-    metadata are primarily processed and stored on
-    the operator's local computer.
-  </p>
-  <p>
-    Authentication credentials and tokens must be
-    protected against unauthorized access and must
-    not be committed to public source code repositories.
-  </p>
-  <p>
-    Authorized video uploads and authentication requests
-    may transmit necessary information to the connected
-    social media platform.
-  </p>
-  <p>
-    No method of electronic storage or transmission
-    can guarantee absolute security.
-  </p>
-
-  <h2>6. Data Sharing</h2>
-  <p>
-    Milqka AI Clips does not sell personal information.
-  </p>
-  <p>
-    Information is transmitted to TikTok or another
-    connected platform only as necessary to perform
-    authorized account operations and approved
-    content publication.
-  </p>
-  <p>
-    The application may use local software components
-    for video processing and analysis.
-  </p>
-
-  <h2>7. Data Retention</h2>
-  <p>
-    Local video files, editing metadata, and publication
-    records may be retained for as long as they are
-    needed for the operator's editing workflow.
-  </p>
-  <p>
-    Authentication tokens are retained only while
-    required for the authorized integration and
-    should be removed when the account is disconnected.
-  </p>
-  <p>
-    Data no longer required for the application
-    may be deleted by the operator, subject to
-    applicable legal obligations.
-  </p>
-
-  <h2>8. Account Disconnection and Data Deletion</h2>
-  <p>
-    The operator may revoke TikTok access through
-    the account's authorized application settings.
-  </p>
-  <p>
-    Requests concerning access, correction, or deletion
-    of information associated with Milqka AI Clips
-    can be sent to:
-    <a href="mailto:mil8d1ka@gmail.com">
-      mil8d1ka@gmail.com
-    </a>.
-  </p>
-  <p>
-    Revoking access prevents further authorized API
-    operations, but does not automatically delete
-    videos already published on TikTok.
-  </p>
-
-  <h2>9. Children's Privacy</h2>
-  <p>
-    Milqka AI Clips is not intended for children
-    and does not knowingly collect personal
-    information from children.
-  </p>
-
-  <h2>10. Changes to This Policy</h2>
-  <p>
-    This Privacy Policy may be updated to reflect
-    changes to the application, its integrations,
-    or applicable legal requirements.
-  </p>
-  <p>
-    Updates will be published on this page with
-    a revised "Last updated" date.
-  </p>
-
-  <h2>11. Contact</h2>
-  <p>
-    For privacy questions, data requests, or
-    information about this application, contact:
-  </p>
-  <p>
-    <a href="mailto:mil8d1ka@gmail.com">
-      mil8d1ka@gmail.com
+  <header>
+    <a href="index.html" class="brand">
+      Milqka <span>AI Clips</span>
     </a>
-  </p>
+
+    <nav aria-label="Navigation">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: November 16, 2026</p>
+
+    <div class="intro">
+      <p>
+        This Privacy Policy explains how Milqka AI Clips
+        accesses, uses, stores, shares, retains and handles
+        information in connection with its video editing
+        and authorized publishing functionality, including
+        the use of Google OAuth and YouTube API Services.
+      </p>
+    </div>
+
+    <h2>1. About Milqka AI Clips</h2>
+
+    <p>
+      Milqka AI Clips is a private desktop application
+      designed to help a gaming content creator prepare
+      highlights from gameplay recordings and livestreams,
+      edit vertical short-form videos, add subtitles,
+      review content and publish approved videos to
+      authorized social media accounts.
+    </p>
+
+    <p>
+      The application is intended for use by its operator
+      and is not offered as a public service to third-party
+      users. The website provides information about the
+      application and does not require visitors to sign in.
+    </p>
+
+    <h2>2. Information Processed</h2>
+
+    <p>
+      Depending on the features and connected accounts
+      used, Milqka AI Clips may process:
+    </p>
+
+    <ul>
+      <li>
+        Account identifiers, channel identifiers and
+        basic account or channel information returned
+        by authorized platform APIs.
+      </li>
+      <li>
+        OAuth access tokens, refresh tokens and
+        related authorization information.
+      </li>
+      <li>
+        Creator-provided gameplay recordings,
+        livestream videos and associated audio.
+      </li>
+      <li>
+        Generated clips, thumbnails, titles,
+        descriptions, captions and subtitles.
+      </li>
+      <li>
+        Publishing preferences, creator approvals,
+        upload identifiers, upload status and
+        publication records.
+      </li>
+      <li>
+        Technical diagnostic information, including
+        API responses, error codes and timestamps
+        needed to troubleshoot publishing operations.
+      </li>
+    </ul>
+
+    <p>
+      The application does not ask the operator to
+      provide their Google or social media account
+      passwords. Supported account connections use
+      the relevant platform's authorization process.
+    </p>
+
+    <h2>3. Google OAuth and YouTube API Services</h2>
+
+    <p>
+      Milqka AI Clips uses YouTube API Services,
+      including the YouTube Data API, to support
+      uploading creator-approved videos to a
+      YouTube channel authorized by its owner.
+    </p>
+
+    <h3>Google OAuth Permissions</h3>
+
+    <p>
+      The application requests the
+      <strong>youtube.upload</strong> OAuth scope
+      to upload videos to the authorized YouTube
+      channel on behalf of its owner.
+    </p>
+
+    <p>
+      During account authorization and operation,
+      the application may retrieve the authorized
+      YouTube channel identifier to verify that
+      uploads are directed to the intended channel.
+    </p>
+
+    <h3>How YouTube Information Is Used</h3>
+
+    <p>
+      Information obtained through YouTube API
+      Services is used for the following purposes:
+    </p>
+
+    <ul>
+      <li>
+        Confirm that the connected YouTube channel
+        matches the channel selected by the operator.
+      </li>
+      <li>
+        Authenticate authorized YouTube API requests.
+      </li>
+      <li>
+        Upload creator-approved videos and
+        accompanying publication metadata.
+      </li>
+      <li>
+        Retrieve or reconcile upload and video
+        processing status.
+      </li>
+      <li>
+        Identify technical errors and prevent
+        unintended duplicate uploads.
+      </li>
+    </ul>
+
+    <p>
+      YouTube authorization is used for the
+      application's video publishing workflow.
+      The application does not request access
+      to unrelated Google services as part of
+      this integration.
+    </p>
+
+    <h3>YouTube Terms and Google Privacy Policy</h3>
+
+    <p>
+      By using the application's YouTube integration,
+      the operator is also subject to the
+      <a href="https://www.youtube.com/t/terms"
+         target="_blank" rel="noopener noreferrer">
+        YouTube Terms of Service
+      </a>.
+    </p>
+
+    <p>
+      Google's processing of information is
+      described in the
+      <a href="https://policies.google.com/privacy"
+         target="_blank" rel="noopener noreferrer">
+        Google Privacy Policy
+      </a>.
+    </p>
+
+    <p>
+      The application uses YouTube API Services
+      subject to applicable
+      <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service"
+         target="_blank" rel="noopener noreferrer">
+        YouTube API Services Terms of Service
+      </a>.
+    </p>
+
+    <h2>4. How Information Is Used</h2>
+
+    <p>
+      Information is processed to:
+    </p>
+
+    <ul>
+      <li>Connect and authenticate authorized accounts.</li>
+      <li>Analyze creator-provided gaming recordings.</li>
+      <li>Prepare and edit short-form gaming videos.</li>
+      <li>Generate subtitles and publishing metadata.</li>
+      <li>Support creator review and approval.</li>
+      <li>Upload approved content to connected accounts.</li>
+      <li>Monitor publication and processing status.</li>
+      <li>Investigate errors and maintain application reliability.</li>
+    </ul>
+
+    <p>
+      Milqka AI Clips is designed to require
+      creator approval before initiating
+      publication.
+    </p>
+
+    <h2>5. Local Storage and Security</h2>
+
+    <p>
+      Gaming recordings, generated videos,
+      editing metadata and publication records
+      are primarily processed and stored on
+      the operator's local computer.
+    </p>
+
+    <p>
+      The application maintains authorization
+      information and technical publishing
+      state needed to operate connected
+      integrations and resume or reconcile
+      upload operations.
+    </p>
+
+    <p>
+      Access to the operator's computer and
+      application credentials should be
+      restricted to authorized persons.
+      OAuth tokens and other credentials
+      must not be published in public
+      source code repositories.
+    </p>
+
+    <p>
+      Necessary information is transmitted
+      to connected platform APIs when the
+      operator uses authorized publishing
+      functionality.
+    </p>
+
+    <p>
+      No electronic storage or transmission
+      method can guarantee absolute security.
+    </p>
+
+    <h2>6. Data Sharing and Third Parties</h2>
+
+    <p>
+      Milqka AI Clips does not sell
+      personal information.
+    </p>
+
+    <p>
+      When authorized publishing is performed,
+      the application transmits the information
+      necessary for the requested operation
+      to the selected platform.
+    </p>
+
+    <p>
+      For YouTube uploads, this may include
+      video files, titles, descriptions,
+      thumbnails, privacy settings and
+      authorization information required
+      by the YouTube API.
+    </p>
+
+    <p>
+      Other supported integrations may
+      involve TikTok, Instagram, Threads
+      or their respective official APIs,
+      depending on which accounts the
+      operator connects and uses.
+    </p>
+
+    <p>
+      These platforms process information
+      under their own applicable terms
+      and privacy policies.
+    </p>
+
+    <p>
+      Information obtained from Google APIs
+      is not used to develop, improve or
+      train generalized artificial
+      intelligence or machine learning models.
+    </p>
+
+    <h2>7. Data Retention</h2>
+
+    <p>
+      Local video files, editing metadata,
+      approval records and publication
+      history may be retained for as long
+      as needed for the operator's
+      video production and publishing workflow.
+    </p>
+
+    <p>
+      OAuth credentials and associated
+      integration state may be retained
+      while an account remains connected
+      and the authorization is needed
+      for permitted operations.
+    </p>
+
+    <p>
+      The operator may remove local files
+      and records that are no longer needed,
+      subject to any applicable legal
+      or operational requirements.
+    </p>
+
+    <h2>8. Revoking Google Access</h2>
+
+    <p>
+      The operator may review and revoke
+      Milqka AI Clips access to their
+      Google account at any time using:
+    </p>
+
+    <p>
+      <a href="https://myaccount.google.com/connections"
+         target="_blank" rel="noopener noreferrer">
+        Google Account Connections
+      </a>.
+    </p>
+
+    <p>
+      Revoking Google authorization prevents
+      further API operations that require
+      that authorization, unless access
+      is granted again.
+    </p>
+
+    <p>
+      Revoking access does not automatically
+      remove videos that were previously
+      published to YouTube or delete
+      application files stored locally.
+    </p>
+
+    <h2>9. Data Access and Deletion Requests</h2>
+
+    <p>
+      Questions or requests concerning
+      access to, correction of or deletion
+      of information associated with
+      Milqka AI Clips can be submitted to:
+    </p>
+
+    <p>
+      <a href="mailto:mil8d1ka@gmail.com">
+        mil8d1ka@gmail.com
+      </a>.
+    </p>
+
+    <p>
+      The operator can request removal
+      of locally stored account
+      authorization information and
+      associated application data.
+    </p>
+
+    <p>
+      Deleting local application data
+      does not automatically delete
+      content already published on
+      external platforms.
+    </p>
+
+    <h2>10. TikTok and Other Integrations</h2>
+
+    <p>
+      Milqka AI Clips may connect to
+      supported social media platforms
+      using their official authorization
+      processes and APIs.
+    </p>
+
+    <p>
+      TikTok publishing functionality
+      is subject to the permissions
+      granted by the operator and
+      the capabilities made available
+      through TikTok's APIs.
+    </p>
+
+    <p>
+      Additional information about
+      TikTok's data practices is
+      available in the
+      <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en"
+         target="_blank" rel="noopener noreferrer">
+        TikTok Privacy Policy
+      </a>.
+    </p>
+
+    <h2>11. Children's Privacy</h2>
+
+    <p>
+      Milqka AI Clips is not intended
+      for children and does not
+      knowingly collect personal
+      information from children.
+    </p>
+
+    <h2>12. Changes to This Policy</h2>
+
+    <p>
+      This Privacy Policy may be updated
+      to reflect changes to application
+      functionality, platform integrations
+      or applicable requirements.
+    </p>
+
+    <p>
+      Material changes will be reflected
+      on this page with an updated date.
+    </p>
+
+    <h2 id="contact">13. Contact</h2>
+
+    <p>
+      For privacy questions, authorization
+      concerns or data deletion requests,
+      please contact:
+    </p>
+
+    <p>
+      <a href="mailto:mil8d1ka@gmail.com">
+        mil8d1ka@gmail.com
+      </a>
+    </p>
+  </main>
 
   <footer>
     <p>
       <a href="index.html">Home</a> |
-      <a href="terms.html">Terms of Service</a>
+      <a href="terms.html">Terms of Service</a> |
+      <a href="mailto:mil8d1ka@gmail.com">Contact</a>
     </p>
+
     <p>© 2026 Milqka AI Clips</p>
   </footer>
+
+</div>
 </body>
 </html>
