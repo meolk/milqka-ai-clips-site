@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Milqka AI Clips - a private video editing and publishing application for gaming content.">
+  <meta name="description" content="Milqka AI Clips is a private desktop application for editing gaming highlights and publishing creator-approved short-form videos through authorized platform APIs, including YouTube.">
   <meta name="theme-color" content="#100d18">
 
-  <title>Milqka AI Clips | Video Creation & Publishing</title>
+  <title>Milqka AI Clips | Gaming Video Editing & Publishing</title>
 
   <style>
     :root {
@@ -22,6 +22,10 @@
 
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -53,7 +57,6 @@
     .brand {
       font-size: 19px;
       font-weight: 800;
-      letter-spacing: .3px;
       color: var(--text);
       text-decoration: none;
     }
@@ -84,7 +87,7 @@
 
     .hero {
       text-align: center;
-      padding: 90px 0 65px;
+      padding: 85px 0 65px;
     }
 
     .eyebrow {
@@ -116,15 +119,19 @@
     }
 
     .subtitle {
-      max-width: 620px;
+      max-width: 700px;
       margin: 0 auto;
       font-size: 17px;
       color: var(--muted);
     }
 
     .section-title {
-      font-size: 24px;
+      font-size: 25px;
       margin: 0 0 24px;
+    }
+
+    section {
+      margin-bottom: 75px;
     }
 
     .grid {
@@ -156,20 +163,33 @@
       margin: 0;
     }
 
-    section {
-      margin-bottom: 75px;
-    }
-
-    .workflow {
+    .panel {
       background: rgba(27,21,40,.7);
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 30px;
     }
 
-    .workflow p {
+    .panel h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .panel p {
       color: var(--muted);
+    }
+
+    .panel p:last-child {
       margin-bottom: 0;
+    }
+
+    .steps {
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    .steps li {
+      margin-bottom: 12px;
     }
 
     .contact {
@@ -215,12 +235,16 @@
       }
 
       .hero {
-        padding: 65px 0 45px;
+        padding: 60px 0 45px;
       }
 
       header {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .panel {
+        padding: 22px;
       }
     }
   </style>
@@ -234,8 +258,10 @@
         Milqka <span>AI Clips</span>
       </a>
 
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#youtube">YouTube API</a>
         <a href="#contact">Contact</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -246,35 +272,70 @@
 
       <section class="hero">
         <div class="eyebrow">
-          Private Creator Application
+          Private Gaming Creator Application
         </div>
 
         <h1>
-          Create. Review.<br>
-          <span>Publish.</span>
+          Milqka <span>AI Clips</span>
         </h1>
 
         <p class="subtitle">
-          Milqka AI Clips is a private desktop
-          application for preparing gaming highlights
-          and publishing approved short-form videos
-          to authorized social media accounts.
+          Milqka AI Clips is a private desktop application
+          for transforming gaming recordings and Twitch
+          streams into short-form videos. It assists with
+          selecting highlights, editing vertical clips,
+          adding subtitles, reviewing finished content,
+          and publishing creator-approved videos to
+          authorized social media accounts, including YouTube.
         </p>
       </section>
 
       <section id="about">
         <h2 class="section-title">
-          About Milqka AI Clips
+          What Is Milqka AI Clips?
+        </h2>
+
+        <div class="panel">
+          <h3>Purpose of the Application</h3>
+
+          <p>
+            Milqka AI Clips is developed for a gaming
+            content creator who wants to simplify the
+            production and publication of highlights
+            from their own gameplay and livestreams.
+          </p>
+
+          <p>
+            The application processes creator-provided
+            video recordings, identifies potential
+            highlights, prepares vertical video edits,
+            and supports subtitles and visual effects.
+          </p>
+
+          <p>
+            The creator reviews and approves content
+            before it is submitted for publication.
+            The application is designed for private
+            creator use and is not a publicly available
+            video hosting or social networking service.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">
+          Main Features
         </h2>
 
         <div class="grid">
 
           <div class="card">
             <div class="card-icon">🎬</div>
-            <h3>Video Creation</h3>
+            <h3>Video Editing</h3>
             <p>
-              Prepare short-form gaming videos
-              from recorded gameplay and streams.
+              Prepare short-form gaming highlights
+              from recorded gameplay and livestreams,
+              including vertical layouts and subtitles.
             </p>
           </div>
 
@@ -282,8 +343,9 @@
             <div class="card-icon">✓</div>
             <h3>Creator Approval</h3>
             <p>
-              Review finished videos and approve
-              content before publication.
+              Review selected clips, titles, and
+              publication details before approving
+              videos for upload.
             </p>
           </div>
 
@@ -291,53 +353,163 @@
             <div class="card-icon">↗</div>
             <h3>Authorized Publishing</h3>
             <p>
-              Publish approved videos through
-              supported official platform APIs.
+              Upload approved videos to accounts
+              connected by their owner using
+              official platform authorization.
             </p>
           </div>
 
         </div>
       </section>
 
-      <section>
+      <section id="workflow">
         <h2 class="section-title">
-          How It Works
+          How Milqka AI Clips Works
         </h2>
 
-        <div class="workflow">
-          <h3>Creator-controlled publishing</h3>
+        <div class="panel">
+          <ol class="steps">
+            <li>
+              The creator provides their own gameplay
+              recording or livestream video.
+            </li>
+            <li>
+              The application analyzes the recording
+              and prepares potential gaming highlights.
+            </li>
+            <li>
+              Selected moments are edited into
+              vertical short-form videos with subtitles
+              and optional visual effects.
+            </li>
+            <li>
+              The creator reviews the resulting videos
+              and approves the content and publication
+              details.
+            </li>
+            <li>
+              Approved videos can be uploaded to
+              authorized social media accounts through
+              supported official APIs.
+            </li>
+          </ol>
 
           <p>
-            The application assists its operator
-            with preparing short-form video content.
-            Finished videos are reviewed before
-            publication.
+            Milqka AI Clips is designed to publish
+            only content approved by the account owner.
+          </p>
+        </div>
+      </section>
+
+      <section id="youtube">
+        <h2 class="section-title">
+          YouTube API Integration
+        </h2>
+
+        <div class="panel">
+          <h3>Why the Application Uses YouTube API</h3>
+
+          <p>
+            Milqka AI Clips uses the official
+            YouTube Data API to upload approved
+            gaming videos to the creator's own
+            YouTube channel.
           </p>
 
           <p>
-            Supported social media accounts are
-            connected using official authorization
-            methods, subject to platform permissions.
+            The application requests the
+            youtube.upload OAuth permission
+            to upload videos on behalf of the
+            channel owner after authorization.
+          </p>
+
+          <h3>Google OAuth Authorization</h3>
+
+          <p>
+            The YouTube channel owner authorizes
+            the application through Google's
+            official OAuth consent process.
+            Authorization is required before
+            the application can access the
+            permitted YouTube upload functionality.
           </p>
 
           <p>
-            Publishing is designed to require
-            explicit approval by the account owner.
-            The application is intended for the
-            operator's own accounts and is not
-            offered as a public service.
+            The application does not require
+            visitors to this website to sign in.
+            This website is an informational
+            page about the desktop application.
+          </p>
+
+          <h3>Creator Control</h3>
+
+          <p>
+            Videos are prepared for review and
+            must be approved before publication.
+            The application is intended to operate
+            only on accounts authorized by their owner.
+          </p>
+
+          <h3>Revoking Access</h3>
+
+          <p>
+            The channel owner may revoke the
+            application's Google access at any
+            time through
+            <a href="https://myaccount.google.com/connections">
+              Google Account Connections
+            </a>.
+          </p>
+
+          <p>
+            For more information about data handling,
+            authorization, and deletion requests,
+            please read our
+            <a href="privacy.html">Privacy Policy</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="responsible-use">
+        <h2 class="section-title">
+          Responsible Use
+        </h2>
+
+        <div class="panel">
+          <h3>Creator-Owned Gaming Content</h3>
+
+          <p>
+            Milqka AI Clips is intended for editing
+            and publishing gaming content owned by
+            the creator or used with appropriate
+            authorization.
+          </p>
+
+          <p>
+            The application is not designed or
+            intended to generate, distribute,
+            or facilitate non-consensual intimate
+            imagery, including AI-generated
+            non-consensual intimate imagery.
+          </p>
+
+          <p>
+            The application is intended to comply
+            with applicable Google API policies
+            and YouTube platform requirements.
           </p>
         </div>
       </section>
 
       <section id="contact">
         <div class="contact">
-          <h2>Contact</h2>
+          <h2>Contact Milqka AI Clips</h2>
 
           <p>
-            For questions about Milqka AI Clips,
-            account authorization, privacy,
-            or data deletion requests:
+            For questions about the application,
+            YouTube authorization, privacy,
+            or requests to delete associated data,
+            please contact:
           </p>
 
           <a class="email"
