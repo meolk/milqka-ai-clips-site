@@ -4,190 +4,437 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Terms of Service for Milqka AI Clips">
+  <meta name="description" content="Terms of Service for Milqka AI Clips, a private gaming video editing and authorized publishing application.">
+  <meta name="theme-color" content="#100d18">
   <title>Terms of Service | Milqka AI Clips</title>
+
   <style>
     * { box-sizing: border-box; }
+
     body {
-      background: #111018;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% 0%,
+          #34204e 0%, transparent 55%),
+        #100d18;
       color: #f5f0ff;
-      font-family: Arial, sans-serif;
-      max-width: 820px;
-      margin: 60px auto;
-      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
-    h1, h2, a { color: #d69aff; }
-    h1 { font-size: 34px; }
-    h2 { margin-top: 32px; font-size: 21px; }
-    a { text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .date { color: #b5aec4; }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 35px 24px 65px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #40384e;
+      padding-bottom: 20px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f5f0ff;
+      text-decoration: none;
+    }
+
+    .brand span, h1, h2 {
+      color: #d69aff;
+    }
+
+    a {
+      color: #d69aff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 44px);
+      line-height: 1.2;
+      margin-top: 50px;
+    }
+
+    h2 {
+      margin-top: 38px;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    p, li {
+      color: #d3c9e1;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .date {
+      color: #b5aec4;
+      font-size: 14px;
+    }
+
+    .intro {
+      padding: 24px;
+      border: 1px solid #40384e;
+      border-radius: 16px;
+      background: rgba(27,21,40,.8);
+      margin-top: 28px;
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
     footer {
-      margin-top: 48px;
-      padding-top: 20px;
+      margin-top: 55px;
+      padding-top: 22px;
       border-top: 1px solid #40384e;
+      color: #b5aec4;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px 45px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>Terms of Service</h1>
-  <p class="date">Last updated: November 12, 2026</p>
+<div class="container">
 
-  <h2>1. About the Application</h2>
-  <p>
-    Milqka AI Clips is a privately operated,
-    desktop-based application designed to assist
-    with video editing, content preparation,
-    and publication to authorized social media accounts.
-  </p>
-  <p>
-    The application is intended for personal use
-    by its operator and is not offered as a
-    public service to third-party users.
-  </p>
-
-  <h2>2. Authorized Use</h2>
-  <p>
-    Milqka AI Clips may only be used with accounts
-    and content for which the operator has
-    the necessary rights and authorization.
-  </p>
-  <p>
-    The application must not be used to access
-    accounts without permission, distribute
-    unlawful content, or violate applicable
-    platform policies.
-  </p>
-
-  <h2>3. Content Ownership</h2>
-  <p>
-    The application does not claim ownership
-    of videos or other content processed
-    through its editing workflow.
-  </p>
-  <p>
-    The operator remains responsible for ensuring
-    that published content complies with
-    applicable copyright laws, privacy
-    requirements, and platform rules.
-  </p>
-
-  <h2>4. Social Media Integration</h2>
-  <p>
-    Milqka AI Clips may connect to supported
-    social media platforms through their
-    official authorization mechanisms and APIs.
-  </p>
-  <p>
-    The availability of publishing features
-    depends on the permissions granted,
-    platform approval, and applicable
-    technical restrictions.
-  </p>
-  <p>
-    The application is designed to initiate
-    publication only after explicit
-    approval by the operator.
-  </p>
-
-  <h2>5. TikTok Integration</h2>
-  <p>
-    TikTok integration is subject to the
-    applicable TikTok developer requirements,
-    API restrictions, and platform terms.
-  </p>
-  <p>
-    Connecting a TikTok account does not
-    guarantee that all publishing features
-    will be available.
-  </p>
-  <p>
-    TikTok is an independent third-party
-    platform and is not responsible for
-    the operation of Milqka AI Clips.
-  </p>
-
-  <h2>6. Account Authorization</h2>
-  <p>
-    Social media account connections must
-    be established using authorized
-    authentication procedures.
-  </p>
-  <p>
-    Access may be revoked through the
-    relevant platform's account settings.
-  </p>
-  <p>
-    The operator is responsible for
-    maintaining the security of the
-    devices and accounts used with
-    the application.
-  </p>
-
-  <h2>7. Availability and Changes</h2>
-  <p>
-    Application features may be modified,
-    suspended, or discontinued.
-  </p>
-  <p>
-    Functionality may also be affected
-    by changes to third-party APIs,
-    authorization requirements,
-    or platform policies.
-  </p>
-
-  <h2>8. Disclaimer</h2>
-  <p>
-    The application is provided on an
-    "as available" basis, without
-    guarantees of uninterrupted
-    operation or compatibility with
-    every third-party platform.
-  </p>
-  <p>
-    Nothing in these Terms excludes
-    rights or protections that cannot
-    lawfully be excluded.
-  </p>
-
-  <h2>9. Privacy</h2>
-  <p>
-    Information about the application's
-    handling of data is available in
-    the
-    <a href="privacy.html">Privacy Policy</a>.
-  </p>
-
-  <h2>10. Changes to These Terms</h2>
-  <p>
-    These Terms may be updated to reflect
-    changes in the application,
-    platform requirements, or
-    applicable legal obligations.
-  </p>
-  <p>
-    The date at the top of this page
-    indicates the most recent update.
-  </p>
-
-  <h2>11. Contact</h2>
-  <p>
-    For questions concerning
-    Milqka AI Clips, contact:
-  </p>
-  <p>
-    <a href="mailto:mil8d1ka@gmail.com">
-      mil8d1ka@gmail.com
+  <header>
+    <a href="index.html" class="brand">
+      Milqka <span>AI Clips</span>
     </a>
-  </p>
+
+    <nav aria-label="Navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Terms of Service</h1>
+    <p class="date">Last updated: November 16, 2026</p>
+
+    <div class="intro">
+      <p>
+        These Terms of Service describe the intended
+        use of Milqka AI Clips, including its gaming
+        video editing features, creator-controlled
+        publishing workflow, and integrations with
+        third-party platforms such as YouTube.
+      </p>
+    </div>
+
+    <h2>1. About Milqka AI Clips</h2>
+
+    <p>
+      Milqka AI Clips is a private desktop application
+      developed to assist a gaming content creator
+      with processing gameplay recordings and
+      livestreams, selecting highlights, editing
+      vertical short-form videos, adding subtitles,
+      and publishing approved content to authorized
+      social media accounts.
+    </p>
+
+    <p>
+      The application is intended for private use
+      by its operator. It is not offered as a public
+      video hosting service or as a social networking
+      platform for third-party users.
+    </p>
+
+    <h2>2. Authorized Use</h2>
+
+    <p>
+      Milqka AI Clips must only be used with accounts,
+      recordings, videos, audio and other content
+      that the operator owns or is authorized to use.
+    </p>
+
+    <p>
+      The operator must not use the application
+      to access accounts without permission,
+      infringe intellectual property rights,
+      violate privacy rights or distribute
+      unlawful or prohibited content.
+    </p>
+
+    <h2>3. Content Ownership and Responsibility</h2>
+
+    <p>
+      Milqka AI Clips does not claim ownership
+      of the content processed or published
+      through its workflow.
+    </p>
+
+    <p>
+      The operator remains responsible for
+      reviewing and approving content and
+      ensuring that published videos comply
+      with applicable laws, copyright rules,
+      privacy requirements and platform policies.
+    </p>
+
+    <h2>4. Video Editing and Publishing Workflow</h2>
+
+    <p>
+      The application assists with analyzing
+      creator-provided gaming recordings,
+      preparing short-form highlights,
+      generating subtitles and editing videos.
+    </p>
+
+    <p>
+      Finished videos and associated publication
+      information are prepared for creator review.
+      The application is designed to require
+      explicit approval before publication.
+    </p>
+
+    <p>
+      Publication depends on the availability
+      of the selected platform's APIs,
+      the permissions granted by the account
+      owner and any applicable restrictions.
+    </p>
+
+    <h2>5. YouTube API Integration</h2>
+
+    <p>
+      Milqka AI Clips uses YouTube API Services,
+      including the YouTube Data API, to support
+      uploading creator-approved gaming videos
+      to a YouTube channel authorized by its owner.
+    </p>
+
+    <p>
+      The application requests the
+      <strong>youtube.upload</strong> OAuth scope
+      to perform authorized video uploads.
+    </p>
+
+    <p>
+      The operator must authorize the application
+      through Google's official OAuth consent
+      process before using YouTube publishing
+      functionality.
+    </p>
+
+    <p>
+      The application is intended to publish
+      only to channels for which the operator
+      has the necessary authorization.
+    </p>
+
+    <h3>YouTube Terms</h3>
+
+    <p>
+      Use of YouTube functionality is also
+      subject to the
+      <a href="https://www.youtube.com/t/terms"
+         target="_blank" rel="noopener noreferrer">
+        YouTube Terms of Service
+      </a>
+      and the
+      <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service"
+         target="_blank" rel="noopener noreferrer">
+        YouTube API Services Terms of Service
+      </a>.
+    </p>
+
+    <p>
+      Google's handling of information is
+      described in the
+      <a href="https://policies.google.com/privacy"
+         target="_blank" rel="noopener noreferrer">
+        Google Privacy Policy
+      </a>.
+    </p>
+
+    <h2>6. Other Social Media Integrations</h2>
+
+    <p>
+      Milqka AI Clips may integrate with
+      supported platforms such as TikTok,
+      Instagram and Threads using their
+      respective official authorization
+      mechanisms and APIs.
+    </p>
+
+    <p>
+      The availability of these features
+      depends on platform permissions,
+      API access and applicable technical
+      or policy restrictions.
+    </p>
+
+    <p>
+      Each platform operates independently
+      and is governed by its own terms
+      and privacy policies.
+    </p>
+
+    <h2>7. Account Authorization and Revocation</h2>
+
+    <p>
+      Account connections must be established
+      through authorized authentication
+      procedures.
+    </p>
+
+    <p>
+      The operator is responsible for
+      maintaining the security of the
+      accounts and devices used with
+      Milqka AI Clips.
+    </p>
+
+    <p>
+      Google account access can be reviewed
+      or revoked through
+      <a href="https://myaccount.google.com/connections"
+         target="_blank" rel="noopener noreferrer">
+        Google Account Connections
+      </a>.
+    </p>
+
+    <p>
+      Revoking authorization may disable
+      related publishing functionality.
+      It does not automatically remove
+      videos already published to
+      external platforms.
+    </p>
+
+    <h2>8. Responsible Use and Prohibited Content</h2>
+
+    <p>
+      Milqka AI Clips is intended for
+      legitimate gaming content creation,
+      editing and authorized publication.
+    </p>
+
+    <p>
+      The application must not be used
+      to create, distribute or facilitate
+      non-consensual intimate imagery,
+      including AI-generated
+      non-consensual intimate imagery.
+    </p>
+
+    <p>
+      The operator must comply with
+      applicable Google API policies,
+      YouTube policies and the rules
+      of other connected platforms.
+    </p>
+
+    <h2>9. Availability and Third-Party Services</h2>
+
+    <p>
+      Application functionality may change
+      or become temporarily unavailable
+      because of software updates,
+      third-party API changes,
+      authorization restrictions
+      or platform availability.
+    </p>
+
+    <p>
+      Milqka AI Clips is not affiliated
+      with, endorsed by or sponsored by
+      Google, YouTube, TikTok, Instagram
+      or Threads.
+    </p>
+
+    <h2>10. Disclaimer</h2>
+
+    <p>
+      The application is provided on an
+      "as available" basis, without
+      guarantees of uninterrupted operation,
+      successful publication or compatibility
+      with every third-party service.
+    </p>
+
+    <p>
+      Nothing in these Terms excludes
+      rights or protections that cannot
+      lawfully be excluded.
+    </p>
+
+    <h2>11. Privacy and Data Handling</h2>
+
+    <p>
+      Information about the application's
+      collection, use, storage, sharing,
+      retention and deletion of data
+      is available in the
+      <a href="privacy.html">Privacy Policy</a>.
+    </p>
+
+    <h2>12. Changes to These Terms</h2>
+
+    <p>
+      These Terms may be updated to
+      reflect changes in the application,
+      platform requirements or
+      applicable legal obligations.
+    </p>
+
+    <p>
+      The date at the top of this page
+      indicates the latest revision.
+    </p>
+
+    <h2 id="contact">13. Contact</h2>
+
+    <p>
+      Questions concerning Milqka AI Clips,
+      its integrations or these Terms
+      may be directed to:
+    </p>
+
+    <p>
+      <a href="mailto:mil8d1ka@gmail.com">
+        mil8d1ka@gmail.com
+      </a>
+    </p>
+  </main>
 
   <footer>
     <p>
       <a href="index.html">Home</a> |
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="mailto:mil8d1ka@gmail.com">Contact</a>
     </p>
+
     <p>© 2026 Milqka AI Clips</p>
   </footer>
+
+</div>
 </body>
 </html>
